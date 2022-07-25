@@ -151,4 +151,5 @@ td {
 
 .hidden {
   display: none;
+  border: none!important;
 }
