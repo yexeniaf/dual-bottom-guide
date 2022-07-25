@@ -1,0 +1,154 @@
+body {
+  font-family: sans-serif;
+}
+
+.chart-title {
+  color: black;
+  background-color: #e7dac4;
+  padding: 1rem;
+  font-weight: 700;
+  border-left: 3px solid white;
+  border-bottom: 3px solid black;
+}
+
+td {
+  padding: .6rem;
+  text-align: center;
+}
+
+.inches-row, .centimeters-row {
+  border: 2px solid black;
+  border-bottom: none;
+}
+
+
+/* Toggle button */
+
+
+.toggle-button-cover {
+  display: table-cell;
+  position: relative;
+  height: 2rem;
+  box-sizing: border-box;
+}
+
+.button-cover {
+ border-width: 20px; 
+}
+
+.button-cover:before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #d7e3e3;
+}
+
+.button-cover,
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.knobs{
+  border:1px solid #000000;
+  }
+
+.button {
+  position: relative;
+  top: 50%;
+  width: 74px;
+  height: 36px;
+  margin: -30px auto 0 auto;
+  overflow: hidden;
+}
+
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #fff;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+#button-10 .knobs:before,
+#button-10 .knobs:after,
+#button-10 .knobs span {
+  position: absolute;
+  top: 1px;
+  width: 20px;
+  height: 10px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 6px;
+}
+
+#button-10 .knobs:before {
+  content: "";
+  height: 15px;
+  background-color: #e7dac4;
+}
+
+#button-10 .knobs:after {
+  content: "CM";
+  right: 4px;
+  color: rgb(0, 0, 0);
+}
+
+#button-10 .knobs span {
+  display: inline-block;
+  left: 1px;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+}
+
+#button-10 .checkbox:checked + .knobs span {
+  color: rgb(0, 0, 0);
+}
+
+#button-10 .checkbox:checked + .knobs:before {
+  left: 35px;
+  background-color: #e7dac4;
+  padding-right: 11px;
+  content: "";
+  
+}
+
+#button-10 .checkbox:checked + .knobs:after {
+  color: rgb(0, 0, 0);
+}
+
+#button-10 .checkbox:checked ~ .layer {
+  background-color: #ffffff;
+}
+
+.active {
+  display: table-cell!important;
+}
+
+.active-row {
+  display: table-row!important; 
+}
+
+.hidden {
+  display: none;
+}
