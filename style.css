@@ -23,8 +23,6 @@ td {
 
 
 /* Toggle button */
-
-
 .toggle-button-cover {
   display: table-cell;
   position: relative;
@@ -161,10 +159,12 @@ td {
   justify-content: flex-start;
   align-items: flex-start;
   font-family: sans-serif;
+  margin-left: 5rem;
+  margin-top: 3rem;
 }
 
-.model-image {
-  height: 30rem;
+#xs-model, #s-model, #xl-model {
+  height: 40rem;
   width: auto;
   margin-right: 3rem;
 
@@ -173,4 +173,38 @@ td {
 .info{
   padding-bottom: .7rem;
   border-bottom: 1px solid black;
+}
+
+/* Image and Info Alignment */
+.test {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Toggle Alignment With View Text */
+
+.test2 {
+  display: flex;
+  align-items: center;
+}
+
+/* Toggle Button of Model Image and Info */
+.switch-toggle {
+  float: left;
+  background: white;
+ 
+}
+.switch-toggle input {
+ position: absolute;
+ opacity: 0;
+ 
+}
+.switch-toggle input + label {
+ padding: 7px;
+ float:left;
+ color: black;
+ cursor: pointer;
+}
+.switch-toggle input:checked + label {
+ background: beige;
 }
