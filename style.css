@@ -163,6 +163,10 @@ td {
   margin-top: 3rem;
 }
 
+.guide-body {
+  margin-top: 3rem;
+}
+
 #xs-model, #s-model, #xl-model {
   height: 40rem;
   width: auto;
@@ -173,6 +177,10 @@ td {
 .info{
   padding-bottom: .7rem;
   border-bottom: 1px solid black;
+}
+
+hr {
+  margin-right: 3rem;
 }
 
 /* Image and Info Alignment */
@@ -206,5 +214,5 @@ td {
  cursor: pointer;
 }
 .switch-toggle input:checked + label {
- background: beige;
+ background: #e7dac4;
 }
