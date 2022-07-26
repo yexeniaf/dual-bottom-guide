@@ -215,4 +215,5 @@ hr {
 }
 .switch-toggle input:checked + label {
  background: #e7dac4;
+ font-weight: 700;
 }
