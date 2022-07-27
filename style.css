@@ -159,7 +159,7 @@ td {
   justify-content: flex-start;
   align-items: flex-start;
   font-family: sans-serif;
-  margin-left: 5rem;
+  margin-left: 8rem;
   margin-top: 3rem;
 }
 
@@ -167,9 +167,9 @@ td {
   margin-top: 3rem;
 }
 
-#xs-model, #s-model, #xl-model {
-  height: 40rem;
-  width: auto;
+img {
+  height: 30rem;
+  width: 20rem;
   margin-right: 3rem;
 
 }

@@ -35,3 +35,17 @@ for (var i = 0; i < oldRow.length; i++) {
 }
 
 });
+
+// Function for Image Guide Toggle Button //
+
+function imageExtraSmall() {
+  document.getElementById("model-image").src = "images/size-xs.png";
+}
+
+function imageSmall() {
+  document.getElementById("model-image").src = "images/size-s.png";
+}
+
+function imageExtraLarge() {
+  document.getElementById("model-image").src = "images/size-xl.png";
+}

@@ -106,19 +106,22 @@
     <div>
     <div class="test"> 
       <div class="image-info">
-      <img src="images/size-xs.png" alt="extra small size model" id="xs-model">
-      <img src="images/size-s.png" alt="small size model" id="s-model" class="hidden">
-      <img src="images/size-xl.png" alt="extra large size model" id="xl-model" class="hidden">
+      <img src="images/size-xs.png" alt="extra small size model" id="model-image" >
     </div>
       <div class="test2">
       <p>View on a:</p>
+
       <div class="switch-toggle switch-3 switch-candy">
-        <input id="XS" name="state-d" type="radio" checked="checked" />
-          <label for="XS" onclick=""> Size XS</label>
-        <input id="S" name="state-d" type="radio" checked="" />
-          <label for="S" class="disabled" onclick=""> Size S </label>
-        <input id="XL" name="state-d" type="radio" />
-          <label for="XL" onclick=""> Size XL</label>
+
+        <input id="XS" name="state-d" type="radio" checked="checked" value=XS onclick="imageExtaSmall()"/>
+        <label for="XS" > Size XS</label>
+      
+        <input id="S" name="state-d" type="radio" class="hidden" value=XS onclick="imageSmall()" />
+        <label for="S" >Size S</label>
+      
+        <input id="XL" name="state-d" type="radio" class="hidden"value=XS onclick="imageExtraLarge()"/>
+        <label for="XL" >Size XL</label>
+      
       </div>
     </div> 
     </div>
