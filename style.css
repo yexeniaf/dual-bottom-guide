@@ -2,6 +2,8 @@ body {
   font-family: sans-serif;
 }
 
+/* Chart Styling */
+
 .chart-title {
   color: black;
   background-color: #e7dac4;
@@ -171,8 +173,7 @@ td {
 
 img {
   height: 30rem;
-  width: 20rem;
-  margin-right: 3rem;
+  margin-right: 2.5rem;
 
 }
 
@@ -294,5 +295,6 @@ hr {
 .popup .content {
   overflow: scroll;
   height: 100%;
+  
 }
 

@@ -46,7 +46,7 @@ function imageExtraSmall() {
 }
 
 function imageSmall() {
-  document.getElementById("model-image").src = "images/size-s.png";
+  document.getElementById("model-image").src = "https://cdn.shopify.com/s/files/1/0382/1223/9492/files/MeasuringGuide-05.jpg?v=1658957036";
   document.getElementById("xs-info").style.display = "none";
   document.getElementById("s-info").style.display = "block";
   document.getElementById("xl-info").style.display = "none";
@@ -54,7 +54,7 @@ function imageSmall() {
 }
 
 function imageExtraLarge() {
-  document.getElementById("model-image").src = "images/size-xl.png";
+  document.getElementById("model-image").src = "https://cdn.shopify.com/s/files/1/0382/1223/9492/files/MeasuringGuide-06.jpg?v=1658956407";
   document.getElementById("xs-info").style.display = "none";
   document.getElementById("s-info").style.display = "none";
   document.getElementById("xl-info").style.display = "block";
