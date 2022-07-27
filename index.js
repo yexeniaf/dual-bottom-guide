@@ -40,12 +40,24 @@ for (var i = 0; i < oldRow.length; i++) {
 
 function imageExtraSmall() {
   document.getElementById("model-image").src = "images/size-xs.png";
+  document.getElementById("xs-info").style.display = "block";
+  document.getElementById("s-info").style.display = "none";
+  document.getElementById("xl-info").style.display = "none";
 }
 
 function imageSmall() {
   document.getElementById("model-image").src = "images/size-s.png";
+  document.getElementById("xs-info").style.display = "none";
+  document.getElementById("s-info").style.display = "block";
+  document.getElementById("xl-info").style.display = "none";
+
 }
 
 function imageExtraLarge() {
   document.getElementById("model-image").src = "images/size-xl.png";
+  document.getElementById("xs-info").style.display = "none";
+  document.getElementById("s-info").style.display = "none";
+  document.getElementById("xl-info").style.display = "block";
+
+ 
 }

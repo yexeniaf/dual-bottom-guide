@@ -113,7 +113,7 @@
 
       <div class="switch-toggle switch-3 switch-candy">
 
-        <input id="XS" name="state-d" type="radio" checked="checked" value=XS onclick="imageExtaSmall()"/>
+        <input id="XS" name="state-d" type="radio" checked="checked" value=XS onclick="imageExtraSmall()"/>
         <label for="XS" > Size XS</label>
       
         <input id="S" name="state-d" type="radio" class="hidden" value=XS onclick="imageSmall()" />
@@ -128,14 +128,19 @@
 
       <div class="image-info"> 
         <hr>
-        <p class="xs-model-info">Erin is 5'8" and is wearing size XS
-        <p class="xs-model-info">Bust: 32 in <br/>Waist: 24.5 in <br/> Hips: 35 in</p>
-
-        <p class="s-model-info hidden">Christine is 5'9" and is wearing size S
-        <p class="s-model-info hidden">Bust: 36 in <br/>Waist: 30 in <br/> Hips: 40 in</p>
-
-        <p class="xl-model-info hidden">Leah is 5'11" and is wearing size XL
-        <p class="xl-model-info hidden">Bust: 48 in <br/>Waist: 35 in <br/> Hips: 46 in</p>
+        <div id="xs-info" >
+        <p >Erin is 5'8" and is wearing size XS
+        <p >Bust: 32 in <br/>Waist: 24.5 in <br/> Hips: 35 in</p>
+      </div>
+      <div id="s-info" style="display:none">
+        <p >Christine is 5'9" and is wearing size S
+        <p >Bust: 36 in <br/>Waist: 30 in <br/> Hips: 40 in</p>
+        </div>
+      
+        <div id="xl-info" style="display:none">
+        <p>Leah is 5'11" and is wearing size XL
+        <p>Bust: 48 in <br/>Waist: 35 in <br/> Hips: 46 in</p>
+      </div>
 
       </div>
     </div>
