@@ -18,7 +18,10 @@ td {
 
 .inches-row, .centimeters-row {
   border: 2px solid black;
-  border-bottom: none;
+}
+
+.centimeters-hidden {
+  border: none;
 }
 
 
@@ -149,7 +152,6 @@ td {
 
 .hidden {
   display: none;
-  border: none!important;
 }
 
 /* Measuring Guide With Image */
@@ -189,14 +191,11 @@ hr {
 }
 
 /* Image and Info Alignment */
-.test {
-  display: flex;
-  flex-direction: column;
-}
+
 
 /* Toggle Alignment With View Text */
 
-.test2 {
+.size-options {
   display: flex;
   align-items: center;
 }
@@ -217,8 +216,12 @@ hr {
  float:left;
  color: black;
  cursor: pointer;
+ margin-left: 1rem;
 }
 .switch-toggle input:checked + label {
  background: #e7dac4;
  font-weight: 700;
+
 }
+
+/* Pop-up function */
