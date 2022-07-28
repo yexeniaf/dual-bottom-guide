@@ -271,7 +271,7 @@ hr {
   background: #fff;
   border-radius: 5px;
   position: relative;
-  width: 70%;
+  width: 66%;
   height: 80%;
 }
 
@@ -282,8 +282,8 @@ hr {
 }
 .popup .close {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 0px;
+  right: 4px;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
@@ -298,3 +298,59 @@ hr {
   
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-height: 896px) {
+  h1 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .popup {
+    margin: 45px auto;
+    padding: 13px;
+    width: 87%;
+    height: 84%;
+  }
+
+.measuring-guide {
+  margin-left: 0rem;
+}
+
+.content {
+  font-size: .5rem;
+}
+.chart-title {
+  color: black;
+  background-color: #e7dac4;
+  padding: 0.2rem;
+  font-weight: 700;
+  border-left: 1px solid white;
+  border-bottom: 1px solid black;
+}
+td {
+  padding: 0.1rem;
+  text-align: center;
+}
+
+img {
+  height: 14rem;
+  margin-right: 2.5rem;
+}
+
+.switch-toggle input + label {
+  margin-left: 0.3rem;
+}
+
+.measuring-guide-title {
+  font-size: .7rem;
+}
+
+.tape-info {
+  margin-top: 0.8rem;
+  font-size: 1em;
+}
+
+.info-break {
+  display: none;
+}
+
+
+}
