@@ -19,143 +19,147 @@
   <div id="popup1" class="overlay">
     <div class="popup">
       <div class="content">
-  <div class="size-charts">
-    <div class="bottoms">
-      <h1>Bottoms Dual Size Guide</h1> 
-      <a class="close" href="#">&times;</a>
-      <div class="row">
-        <div class="toggle-button-cover">
-          <div class="button-cover">
-            <div class="button b2" id="button-10">
-              <input type="checkbox" class="checkbox" id="marked"  />
-              <div class="knobs" id="knobs">
-              <span id="IN">IN</span>
+        <div class="size-charts">
+          <div class="bottoms">
+            <h1>Bottoms Dual Size Guide</h1> 
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+              <div class="toggle-button-cover">
+                <div class="button-cover">
+                  <div class="button b2" id="button-10">
+                    <input type="checkbox" class="checkbox" id="marked"/>
+                    <div class="knobs" id="knobs">
+                      <span id="IN">IN</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <table  cellpadding="0" cellspacing="10px" rules="none" >
+                <tr>
+                  <th class="chart-title">SIZE<br> (US)</th>
+                  <th class="chart-title">SIZE NUMERIC<br>(US)</th>
+                  <th class="chart-title">WAIST/JEAN<br>SIZE</th>
+                  <th class="chart-title">EURO <br>SIZE</th>
+                  <th class="chart-title">TORSO TOTAL<br>CIRCUMFERENCE</th>
+                  <th class="chart-title">LOW HIP <br> 8' BELOW <br> WAIST</th>
+                  <th class="chart-title">THIGH</th>
+                  <th class="chart-title">INSEAM</th>
+                </tr>
+                <tr class="inches-row">
+                  <td class="inches">XS/S</td>
+                  <td class="inches">2-6</td>
+                  <td class="inches">24-27</td>
+                  <td class="inches">36-40</td>
+                  <td class="inches">60-62</td>
+                  <td class="inches">35-38</td>
+                  <td class="inches">21-23</td>
+                  <td class="inches">29-30.5</td>
+                </tr>
+                <tr class="inches-row">
+                  <td class="inches">M/L</td>
+                  <td class="inches">8-12</td>
+                  <td class="inches">28-32</td>
+                  <td class="inches">42-46</td>
+                  <td class="inches">63-65</td>
+                  <td class="inches">39-44</td>
+                  <td class="inches">24-26</td>
+                  <td class="inches">31.5</td>
+                </tr>
+                <tr class="inches-row">
+                  <td class="inches">XL/XXL</td>
+                  <td class="inches">14-16</td>
+                  <td class="inches">33-38</td>
+                  <td class="inches">48-52</td>
+                  <td class="inches">66-69</td>
+                  <td class="inches">45-48</td>
+                  <td class="inches">27-28</td>
+                  <td class="inches">31.5-32</td>
+                </tr>
+                <tr class="centimeters-row">
+                  <td class="size, centimeters hidden">XS/S</td>
+                  <td class="centimeters hidden">2-6</td>
+                  <td class="centimeters hidden">61-68</td>
+                  <td class="centimeters hidden">91.5-102</td>
+                  <td class="centimeters hidden">152.5-157.5</td>
+                  <td class="centimeters hidden">89-94</td>
+                  <td class="centimeters hidden">53.5-58</td>
+                  <td class="centimeters hidden">74-77.5</td>
+                </tr>
+                <tr class="centimeters-row">
+                  <td class="size, centimeters hidden">M/L</td>
+                  <td class="centimeters hidden">8-12</td>
+                  <td class="centimeters hidden">71-81</td>
+                  <td class="centimeters hidden">107-117</td>
+                  <td class="centimeters hidden">160-165</td>
+                  <td class="centimeters hidden">99.5-109</td>
+                  <td class="centimeters hidden">61-66</td>
+                  <td class="centimeters hidden">80</td>
+                </tr>
+                <tr class="centimeters-row">
+                  <td class="size, centimeters hidden">XL/XXL</td>
+                  <td class="centimeters hidden">14-16</td>
+                  <td class="centimeters hidden">85-92</td>
+                  <td class="centimeters hidden">122-127</td>
+                  <td class="centimeters hidden">168-173</td>
+                  <td class="centimeters hidden">114-119.5</td>
+                  <td class="centimeters hidden">68.5-71</td>
+                  <td class="centimeters hidden">80-81</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- Image measuring Guide -->
+          <div class="measuring-guide">
+            <div>
+              <div class="image-info">
+                <img src="https://cdn.shopify.com/s/files/1/0382/1223/9492/files/MeasuringGuide-04.jpg?v=1658957156" alt="extra small size model" id="model-image">
+                  <div class="size-options">
+                    <p>View on a:</p>
+                    <div class="switch-toggle switch-3 switch-candy">
+                      <input id="XS" name="state-d" type="radio" checked="checked" value=XS onclick="imageExtraSmall()"/>
+                        <label for="XS" > Size XS</label>
+                      <input id="S" name="state-d" type="radio" class="hidden" value=XS onclick="imageSmall()" />
+                        <label for="S" >Size S</label>
+                      <input id="XL" name="state-d" type="radio" class="hidden"value=XS onclick="imageExtraLarge()"/>
+                        <label for="XL" >Size XL</label>
+                    </div>
+                  </div> 
+              </div>
+
+              <div class="image-info"> 
+                <hr>
+                <div id="xs-info" >
+                  <p >Erin is 5'8" and is wearing size XS
+                  <p >Bust: 32 in <br/>Waist: 24.5 in <br/> Hips: 35 in</p>
+                </div>
+                <div id="s-info" style="display:none">
+                  <p >Christine is 5'9" and is wearing size S
+                  <p >Bust: 36 in <br/>Waist: 30 in <br/> Hips: 40 in</p>
+                </div>
+                <div id="xl-info" style="display:none">
+                  <p>Leah is 5'11" and is wearing size XL
+                  <p>Bust: 48 in <br/>Waist: 35 in <br/> Hips: 46 in</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h1 class="measuring-guide-title">MEASURING GUIDE</h1>
+              <h2 class="guide-body">BUST</h2>
+                <p class="info">Measure underneath your arms <br class="info-break"/> around the fullest part of your bust.</p>
+              <h2>WAIST</h2>
+                <p class="info">Measure around your natural waist, <br class="info-break"/>at the smallest point.</p>
+              <h2>HIPS</h2>
+                <p class="info">Measure around the fullest part of your hips.</p>
+                <p class="tape-info">*Measuring tape should be level to the floor for accuracy.</p>
             </div>
           </div>
         </div>
       </div>
-      <table  cellpadding="0" cellspacing="10px" rules="none" >
-        <tr>
-          <th class="chart-title">SIZE<br> (US)</th>
-          <th class="chart-title">SIZE NUMERIC<br>(US)</th>
-          <th class="chart-title">WAIST/JEAN<br>SIZE</th>
-          <th class="chart-title">EURO <br>SIZE</th>
-          <th class="chart-title">TORSO TOTAL<br>CIRCUMFERENCE</th>
-          <th class="chart-title">LOW HIP <br> 8' BELOW <br> WAIST</th>
-          <th class="chart-title">THIGH</th>
-          <th class="chart-title">INSEAM</th>
-        </tr>
-        <tr class="inches-row">
-          <td class="inches">XS/S</td>
-          <td class="inches">2-6</td>
-          <td class="inches">24-27</td>
-          <td class="inches">36-40</td>
-          <td class="inches">60-62</td>
-          <td class="inches">35-38</td>
-          <td class="inches">21-23</td>
-          <td class="inches">29-30.5</td>
-        </tr>
-        <tr class="inches-row">
-          <td class="inches">M/L</td>
-          <td class="inches">8-12</td>
-          <td class="inches">28-32</td>
-          <td class="inches">42-46</td>
-          <td class="inches">63-65</td>
-          <td class="inches">39-44</td>
-          <td class="inches">24-26</td>
-          <td class="inches">31.5</td>
-        </tr>
-        <tr class="inches-row">
-          <td class="inches">XL/XXL</td>
-          <td class="inches">14-16</td>
-          <td class="inches">33-38</td>
-          <td class="inches">48-52</td>
-          <td class="inches">66-69</td>
-          <td class="inches">45-48</td>
-          <td class="inches">27-28</td>
-          <td class="inches">31.5-32</td>
-        </tr>
-        <tr class="centimeters-row">
-          <td class="size, centimeters hidden">XS/S</td>
-          <td class="centimeters hidden">2-6</td>
-          <td class="centimeters hidden">61-68</td>
-          <td class="centimeters hidden">91.5-102</td>
-          <td class="centimeters hidden">152.5-157.5</td>
-          <td class="centimeters hidden">89-94</td>
-          <td class="centimeters hidden">53.5-58</td>
-          <td class="centimeters hidden">74-77.5</td>
-        </tr>
-        <tr class="centimeters-row">
-          <td class="size, centimeters hidden">M/L</td>
-          <td class="centimeters hidden">8-12</td>
-          <td class="centimeters hidden">71-81</td>
-          <td class="centimeters hidden">107-117</td>
-          <td class="centimeters hidden">160-165</td>
-          <td class="centimeters hidden">99.5-109</td>
-          <td class="centimeters hidden">61-66</td>
-          <td class="centimeters hidden">80</td>
-        </tr>
-        <tr class="centimeters-row">
-          <td class="size, centimeters hidden">XL/XXL</td>
-          <td class="centimeters hidden">14-16</td>
-          <td class="centimeters hidden">85-92</td>
-          <td class="centimeters hidden">122-127</td>
-          <td class="centimeters hidden">168-173</td>
-          <td class="centimeters hidden">114-119.5</td>
-          <td class="centimeters hidden">68.5-71</td>
-          <td class="centimeters hidden">80-81</td>
-        </tr>
-      </table>
     </div>
-  </div>
-
-    <!-- Image measuring Guide -->
-  <div class="measuring-guide">
-    <div>
-      <div class="image-info">
-        <img src="https://cdn.shopify.com/s/files/1/0382/1223/9492/files/MeasuringGuide-04.jpg?v=1658957156" alt="extra small size model" id="model-image">
-        <div class="size-options">
-          <p>View on a:</p>
-          <div class="switch-toggle switch-3 switch-candy">
-            <input id="XS" name="state-d" type="radio" checked="checked" value=XS onclick="imageExtraSmall()"/>
-              <label for="XS" > Size XS</label>
-            <input id="S" name="state-d" type="radio" class="hidden" value=XS onclick="imageSmall()" />
-              <label for="S" >Size S</label>
-            <input id="XL" name="state-d" type="radio" class="hidden"value=XS onclick="imageExtraLarge()"/>
-              <label for="XL" >Size XL</label>
-          </div>
-        </div> 
-      </div>
-      <div class="image-info"> 
-        <hr>
-        <div id="xs-info" >
-          <p >Erin is 5'8" and is wearing size XS
-          <p >Bust: 32 in <br/>Waist: 24.5 in <br/> Hips: 35 in</p>
-        </div>
-        <div id="s-info" style="display:none">
-          <p >Christine is 5'9" and is wearing size S
-          <p >Bust: 36 in <br/>Waist: 30 in <br/> Hips: 40 in</p>
-        </div>
-        <div id="xl-info" style="display:none">
-          <p>Leah is 5'11" and is wearing size XL
-          <p>Bust: 48 in <br/>Waist: 35 in <br/> Hips: 46 in</p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <h1 class="measuring-guide-title">MEASURING GUIDE</h1>
-      <h2 class="guide-body">BUST</h2>
-        <p class="info">Measure underneath your arms <br class="info-break"/> around the fullest part of your bust.</p>
-      <h2>WAIST</h2>
-        <p class="info">Measure around your natural waist, <br class="info-break"/>at the smallest point.</p>
-      <h2>HIPS</h2>
-        <p class="info">Measure around the fullest part of your hips.</p>
-        <p class="tape-info">*Measuring tape should be level to the floor for accuracy.</p>
-    </div>
-  </div>
-
-  </div>
-  </div>
+  </div>  
   <script src="index.js"></script> 
 </body>
 
