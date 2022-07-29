@@ -3,7 +3,6 @@ body {
 }
 
 /* Chart Styling */
-
 .chart-title {
   color: black;
   background-color: #e7dac4;
@@ -25,9 +24,20 @@ td {
 .centimeters-hidden {
   border: none;
 }
+.active {
+  display: table-cell!important;
+}
+
+.active-row {
+  display: table-row!important; 
+}
+
+.hidden {
+  display: none;
+}
 
 
-/* Toggle button */
+/* CM/IN Toggle button */
 .toggle-button-cover {
   display: table-cell;
   position: relative;
@@ -68,7 +78,6 @@ td {
   margin: -30px auto 0 auto;
   overflow: hidden;
 }
-
 
 .checkbox {
   position: relative;
@@ -144,17 +153,6 @@ td {
   background-color: #ffffff;
 }
 
-.active {
-  display: table-cell!important;
-}
-
-.active-row {
-  display: table-row!important; 
-}
-
-.hidden {
-  display: none;
-}
 
 /* Measuring Guide With Image */
 
@@ -192,11 +190,7 @@ hr {
 }
 
 
-
-/* Image and Info Alignment */
-
-
-/* Toggle Alignment With View Text */
+/* Alignment: size toggle button  With "View on" Text */
 
 .size-options {
   display: flex;
@@ -300,8 +294,9 @@ x
   height: 100%;
   
 }
-
+/* Mobile screens */
 @media only screen and (min-device-width: 320px) and (max-device-height: 896px) {
+  
   h1 {
     font-size: 1rem;
     margin-bottom: 1.5rem;
