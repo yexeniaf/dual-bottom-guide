@@ -338,6 +338,19 @@ th.chart-title {
   padding: 0.4rem;
 }
 
+.first-col {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  
+  left: 0;
+  z-index: 999;
+}
+
+.chart-scroll {
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
 
 img {
   height: 14rem;
@@ -450,17 +463,6 @@ span#IN {
   font-size: .9rem!important;
 }
 
-.first-col {
-  position: -webkit-sticky; /* for Safari */
-  position: sticky;
-  
-  left: 0;
-  z-index: 999;
-}
 
-.chart-scroll {
-  overflow-x: auto;
-  padding-bottom: 1rem;
-}
 
 }
