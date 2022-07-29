@@ -15,6 +15,7 @@ body {
 td {
   padding: .6rem;
   text-align: center;
+  background-color: #fff;
 }
 
 .inches-row, .centimeters-row {
@@ -35,6 +36,8 @@ td {
 .hidden {
   display: none;
 }
+
+
 
 
 /* CM/IN Toggle button */
@@ -292,11 +295,10 @@ x
 .popup .content {
   overflow: scroll;
   height: 100%;
-  
 }
 /* Mobile screens */
 @media only screen and (min-device-width: 320px) and (max-device-height: 896px) {
-  
+
   h1 {
     font-size: 1rem;
     margin-bottom: 1.5rem;
@@ -306,15 +308,19 @@ x
     padding: 13px;
     width: 87%;
     height: 84%;
+    
   }
 
 .measuring-guide {
   margin-left: 0rem;
+  margin-top: 1rem;
 }
 
 .content {
   font-size: .5rem;
 }
+
+
 .chart-title {
   color: black;
   background-color: #e7dac4;
@@ -442,6 +448,19 @@ span#IN {
 
 :after {
   font-size: .9rem!important;
+}
+
+.first-col {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  
+  left: 0;
+  z-index: 999;
+}
+
+.chart-scroll {
+  overflow-x: auto;
+  padding-bottom: 1rem;
 }
 
 }
