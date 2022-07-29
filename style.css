@@ -421,7 +421,6 @@ hr {
   background-color: #e7dac4;
 }
 
-/* CM Font */
 #button-10 .knobs:after {
   content: "CM";
   right: 7px;
@@ -430,7 +429,6 @@ hr {
 }
 
 
-/* beige color box */
 #button-10 .checkbox:checked + .knobs:before {
   left: 35px;
   background-color: #e7dac4;
