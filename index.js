@@ -1,3 +1,4 @@
+// Toggle functionality for IN and CM button
 let btn = document.getElementById("marked");
 let newClass = '';
 
