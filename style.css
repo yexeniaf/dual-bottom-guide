@@ -181,7 +181,7 @@ img {
 .info{
   padding-bottom: .7rem;
   border-bottom: 1px solid black;
-  font-size: .7rem;
+  font-size: 1rem;
 }
 
 .tape-info {
@@ -287,7 +287,7 @@ input:checked + label:hover {
 .popup h2 {
   margin-top: 0;
   color: #333;
-  font-size: .9rem;
+  font-size: 1rem;
   
 }
 .popup .close {
