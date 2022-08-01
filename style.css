@@ -224,7 +224,15 @@ hr {
  font-weight: 700;
 
 }
-x
+
+label:hover {
+  border-bottom: 3px solid #e7dac4;
+}
+
+input:checked + label:hover {
+  border-bottom: none;
+
+}
 
 /* Pop-up function */
 .box {
@@ -308,7 +316,7 @@ x
   .popup {
     margin: 45px auto;
     padding: 13px;
-    width: 87%;
+    width: 90%;
     height: 84%;
     
   }
@@ -320,7 +328,7 @@ x
 
 .content {
   font-size: .8rem;
-  padding-right: .6rem;
+  padding-right: .7rem;
 }
 
 
@@ -366,8 +374,10 @@ hr {
 }
 
 .switch-toggle input + label {
-  margin-left: 0.1rem;
+  padding: 5px;
+  margin: 0 0.3rem 0 0.1rem;
 }
+
 
 .measuring-guide-title {
   font-size: .9rem;
@@ -392,7 +402,9 @@ p {
 
 label {
   font-size: .55rem;
+  border-bottom: 1px solid #e7dac4;
 }
+
 
 /* IN/CM Toggle Button */
 
