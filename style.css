@@ -181,6 +181,7 @@ img {
 .info{
   padding-bottom: .7rem;
   border-bottom: 1px solid black;
+  font-size: .7rem;
 }
 
 .tape-info {
@@ -278,6 +279,7 @@ x
 .popup h2 {
   margin-top: 0;
   color: #333;
+  font-size: .9rem;
   
 }
 .popup .close {
@@ -317,7 +319,8 @@ x
 }
 
 .content {
-  font-size: .5rem;
+  font-size: .8rem;
+  padding-right: .6rem;
 }
 
 
@@ -335,7 +338,8 @@ td {
 }
 
 th.chart-title {
-  padding: 0.4rem;
+  padding: 0.5rem;
+  font-size: .9rem;
 }
 
 .first-col {
@@ -362,20 +366,32 @@ hr {
 }
 
 .switch-toggle input + label {
-  margin-left: 0.3rem;
+  margin-left: 0.1rem;
 }
 
 .measuring-guide-title {
-  font-size: .7rem;
+  font-size: .9rem;
+}
+
+.info {
+  font-size: .6rem;
 }
 
 .tape-info {
   margin-top: 0.8rem;
-  font-size: 1em;
+  font-size: .5rem;
 }
 
 .info-break {
   display: none;
+}
+
+p {
+  font-size: .6rem;
+}
+
+label {
+  font-size: .55rem;
 }
 
 /* IN/CM Toggle Button */
@@ -412,7 +428,7 @@ hr {
   position: relative;
   top: 50%;
   width: 74px;
-  height: 30px;
+  height: 25px;
   margin: -30px auto 0 auto;
   overflow: hidden;
 }
@@ -434,7 +450,7 @@ hr {
 
 #button-10 .knobs:before {
   content: "";
-  height: 17px;
+  height: 11px;
   background-color: #e7dac4;
 }
 
@@ -456,11 +472,11 @@ hr {
 }
 
 span#IN {
-  font-size: .9rem!important;
+  font-size: .8rem!important;
 }
 
 :after {
-  font-size: .9rem!important;
+  font-size: .8rem!important;
 }
 
 
