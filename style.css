@@ -16,15 +16,12 @@ td {
   padding: .6rem;
   text-align: center;
   background-color: #fff;
+  border-top: 2px solid black;
 }
 
-.inches-row, .centimeters-row {
-  border: 2px solid black;
-}
 
-.centimeters-hidden {
-  border: none;
-}
+
+
 .active {
   display: table-cell!important;
 }
