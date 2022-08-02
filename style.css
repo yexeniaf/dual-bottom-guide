@@ -313,10 +313,11 @@ input:checked + label:hover {
     
   }
 
-.measuring-guide {
-  margin-left: 0rem;
-  margin-top: 1rem;
-}
+  .measuring-guide {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+
 
 .content {
   font-size: .8rem;
@@ -325,13 +326,10 @@ input:checked + label:hover {
 
 
 /* Check with David about this */
-/* td {
-  padding: 0.1rem;
-  text-align: center;
-} */
+
 
 th.chart-title {
-  padding: 0.5rem;
+  padding: 1.1rem;
   font-size: .9rem;
 }
 
@@ -476,6 +474,9 @@ span#IN {
   font-size: .8rem!important;
 }
 
-
+/* Pop-up */
+.popup .close {
+  top: -8px;
+}
 
 }
