@@ -34,11 +34,9 @@ for (var i = 0; i < oldRow.length; i++) {
   oldRow[i].classList.add('hidden');
   oldRow[i].classList.remove('active-row');
 }
-
 });
 
 // Function for Image Guide Toggle Button //
-
 function imageExtraSmall() {
   document.getElementById("model-image").src = "https://cdn.shopify.com/s/files/1/0382/1223/9492/files/MeasuringGuide-04.jpg?v=1658957156";
   document.getElementById("xs-info").style.display = "block";
@@ -51,7 +49,6 @@ function imageSmall() {
   document.getElementById("xs-info").style.display = "none";
   document.getElementById("s-info").style.display = "block";
   document.getElementById("xl-info").style.display = "none";
-
 }
 
 function imageExtraLarge() {
@@ -59,6 +56,4 @@ function imageExtraLarge() {
   document.getElementById("xs-info").style.display = "none";
   document.getElementById("s-info").style.display = "none";
   document.getElementById("xl-info").style.display = "block";
-
- 
 }
